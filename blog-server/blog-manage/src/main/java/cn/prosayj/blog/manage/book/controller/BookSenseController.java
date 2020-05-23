@@ -5,7 +5,7 @@ import cn.prosayj.blog.core.dao.base.AbstractController;
 import cn.prosayj.blog.core.common.constants.constant.RedisCacheNames;
 import cn.prosayj.blog.core.dao.entity.book.BookSense;
 import cn.prosayj.blog.manage.book.service.BookSenseService;
-import cn.prosayj.blog.core.util.validator.ValidatorUtils;
+import cn.prosayj.blog.core.dao.validator.ValidatorUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.CacheEvict;

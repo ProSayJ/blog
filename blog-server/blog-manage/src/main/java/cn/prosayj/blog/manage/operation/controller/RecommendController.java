@@ -7,7 +7,7 @@ import cn.prosayj.blog.core.common.constants.constant.RedisCacheNames;
 import cn.prosayj.blog.core.dao.entity.operation.Recommend;
 import cn.prosayj.blog.core.dao.entity.operation.vo.RecommendVO;
 import cn.prosayj.blog.manage.operation.service.RecommendService;
-import cn.prosayj.blog.core.util.validator.ValidatorUtils;
+import cn.prosayj.blog.core.dao.validator.ValidatorUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.CacheEvict;

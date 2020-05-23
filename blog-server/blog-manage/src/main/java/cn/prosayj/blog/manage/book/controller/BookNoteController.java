@@ -8,7 +8,7 @@ import cn.prosayj.blog.core.dao.entity.book.BookNote;
 import cn.prosayj.blog.core.dao.entity.book.dto.BookNoteDTO;
 import cn.prosayj.blog.manage.book.service.BookNoteService;
 import cn.prosayj.blog.manage.operation.service.RecommendService;
-import cn.prosayj.blog.core.util.validator.ValidatorUtils;
+import cn.prosayj.blog.core.dao.validator.ValidatorUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.CacheEvict;

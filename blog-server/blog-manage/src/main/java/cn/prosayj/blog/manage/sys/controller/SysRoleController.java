@@ -8,7 +8,7 @@ import cn.prosayj.blog.core.dao.base.AbstractController;
 import cn.prosayj.blog.core.dao.entity.sys.SysRole;
 import cn.prosayj.blog.manage.sys.service.SysRoleMenuService;
 import cn.prosayj.blog.manage.sys.service.SysRoleService;
-import cn.prosayj.blog.core.util.validator.ValidatorUtils;
+import cn.prosayj.blog.core.dao.validator.ValidatorUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

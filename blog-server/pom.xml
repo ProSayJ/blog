@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
-        <module>blog-core</module>
+        <module>blog-start</module>
         <module>blog-auth</module>
         <module>blog-manage</module>
         <module>blog-portal</module>

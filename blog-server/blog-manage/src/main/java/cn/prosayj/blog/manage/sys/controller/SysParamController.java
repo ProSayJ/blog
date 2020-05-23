@@ -6,7 +6,7 @@ import cn.prosayj.blog.core.dao.PageUtils;
 import cn.prosayj.blog.core.dao.base.AbstractController;
 import cn.prosayj.blog.core.dao.entity.sys.SysParam;
 import cn.prosayj.blog.manage.sys.service.SysParamService;
-import cn.prosayj.blog.core.util.validator.ValidatorUtils;
+import cn.prosayj.blog.core.dao.validator.ValidatorUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.beans.factory.annotation.Autowired;

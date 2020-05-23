@@ -10,7 +10,7 @@ import cn.prosayj.blog.manage.article.service.ArticleService;
 import cn.prosayj.blog.manage.book.service.BookNoteService;
 import cn.prosayj.blog.manage.book.service.BookService;
 import cn.prosayj.blog.manage.operation.service.CategoryService;
-import cn.prosayj.blog.core.util.validator.ValidatorUtils;
+import cn.prosayj.blog.core.dao.validator.ValidatorUtils;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.cache.annotation.CacheConfig;

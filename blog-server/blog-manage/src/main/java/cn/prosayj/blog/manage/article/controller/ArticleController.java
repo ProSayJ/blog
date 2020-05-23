@@ -9,7 +9,7 @@ import cn.prosayj.blog.core.dao.entity.article.dto.ArticleDTO;
 import cn.prosayj.blog.manage.article.service.ArticleService;
 import cn.prosayj.blog.manage.operation.service.RecommendService;
 import cn.prosayj.blog.core.util.notice.mq.annotation.RefreshEsMqSender;
-import cn.prosayj.blog.core.util.validator.ValidatorUtils;
+import cn.prosayj.blog.core.dao.validator.ValidatorUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.CacheEvict;

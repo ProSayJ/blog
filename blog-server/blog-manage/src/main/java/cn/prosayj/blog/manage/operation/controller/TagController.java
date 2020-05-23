@@ -9,7 +9,7 @@ import cn.prosayj.blog.core.dao.entity.operation.Tag;
 import cn.prosayj.blog.core.dao.entity.operation.TagLink;
 import cn.prosayj.blog.core.dao.mapper.operation.TagLinkMapper;
 import cn.prosayj.blog.manage.operation.service.TagService;
-import cn.prosayj.blog.core.util.validator.ValidatorUtils;
+import cn.prosayj.blog.core.dao.validator.ValidatorUtils;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.springframework.cache.annotation.CacheConfig;

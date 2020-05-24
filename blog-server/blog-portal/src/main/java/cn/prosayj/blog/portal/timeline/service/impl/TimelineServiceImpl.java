@@ -1,8 +1,8 @@
 package cn.prosayj.blog.portal.timeline.service.impl;
 
-import cn.prosayj.blog.core.dao.entity.timeline.Timeline;
-import cn.prosayj.blog.core.dao.entity.timeline.TimelineMonth;
-import cn.prosayj.blog.core.dao.entity.timeline.TimelinePost;
+import cn.prosayj.blog.core.dao.domain.timeline.Timeline;
+import cn.prosayj.blog.core.dao.domain.timeline.TimelineMonth;
+import cn.prosayj.blog.core.dao.domain.timeline.TimelinePost;
 import cn.prosayj.blog.core.dao.mapper.timeline.TimelineMapper;
 import cn.prosayj.blog.portal.timeline.service.TimelineService;
 import org.apache.commons.collections.CollectionUtils;

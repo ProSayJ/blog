@@ -1,6 +1,6 @@
 package cn.prosayj.blog.portal.common.aspect;
 
-import cn.prosayj.blog.core.dao.entity.log.LogLike;
+import cn.prosayj.blog.core.dao.domain.log.LogLike;
 import cn.prosayj.blog.core.dao.mapper.article.ArticleMapper;
 import cn.prosayj.blog.core.dao.mapper.book.BookMapper;
 import cn.prosayj.blog.core.dao.mapper.book.BookNoteMapper;

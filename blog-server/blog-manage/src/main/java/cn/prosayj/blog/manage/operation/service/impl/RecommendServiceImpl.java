@@ -2,8 +2,8 @@ package cn.prosayj.blog.manage.operation.service.impl;
 
 import cn.prosayj.blog.core.dao.PageUtils;
 import cn.prosayj.blog.core.dao.Query;
-import cn.prosayj.blog.core.dao.entity.operation.Recommend;
-import cn.prosayj.blog.core.dao.entity.operation.vo.RecommendVO;
+import cn.prosayj.blog.core.dao.domain.operation.Recommend;
+import cn.prosayj.blog.core.dao.domain.operation.vo.RecommendVO;
 import cn.prosayj.blog.manage.operation.mapper.RecommendMapper;
 import cn.prosayj.blog.manage.operation.service.RecommendService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;

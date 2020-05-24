@@ -3,7 +3,7 @@
 <mapper namespace="cn.prosayj.blog.core.dao.mapper.log.LogLikeMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="cn.prosayj.blog.core.dao.entity.log.LogLike">
+    <resultMap id="BaseResultMap" type="cn.prosayj.blog.core.dao.domain.log.LogLike">
         <id column="id" property="id" />
         <result column="type" property="type" />
         <result column="params" property="params" />

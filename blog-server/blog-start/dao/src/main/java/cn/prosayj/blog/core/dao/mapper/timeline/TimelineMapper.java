@@ -1,7 +1,7 @@
 package cn.prosayj.blog.core.dao.mapper.timeline;
 
-import cn.prosayj.blog.core.dao.entity.timeline.Timeline;
-import cn.prosayj.blog.core.dao.entity.timeline.TimelinePost;
+import cn.prosayj.blog.core.dao.domain.timeline.Timeline;
+import cn.prosayj.blog.core.dao.domain.timeline.TimelinePost;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

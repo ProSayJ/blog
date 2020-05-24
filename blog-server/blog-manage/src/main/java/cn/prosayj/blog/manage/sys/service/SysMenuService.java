@@ -1,7 +1,7 @@
 package cn.prosayj.blog.manage.sys.service;
 
 
-import cn.prosayj.blog.core.dao.entity.sys.SysMenu;
+import cn.prosayj.blog.core.dao.domain.sys.SysMenu;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;

@@ -1,7 +1,7 @@
 package cn.prosayj.blog.manage.sys.service;
 
 
-import cn.prosayj.blog.core.dao.entity.sys.SysRoleMenu;
+import cn.prosayj.blog.core.dao.domain.sys.SysRoleMenu;
 import com.baomidou.mybatisplus.extension.service.IService;
 import org.springframework.stereotype.Service;
 

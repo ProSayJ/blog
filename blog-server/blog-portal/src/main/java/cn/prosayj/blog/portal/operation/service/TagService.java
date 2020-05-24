@@ -1,8 +1,8 @@
 package cn.prosayj.blog.portal.operation.service;
 
 
-import cn.prosayj.blog.core.dao.entity.operation.Tag;
-import cn.prosayj.blog.core.dao.entity.operation.vo.TagVO;
+import cn.prosayj.blog.core.dao.domain.operation.Tag;
+import cn.prosayj.blog.core.dao.domain.operation.vo.TagVO;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;

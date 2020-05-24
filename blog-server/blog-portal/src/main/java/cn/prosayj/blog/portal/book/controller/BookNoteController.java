@@ -3,7 +3,7 @@ package cn.prosayj.blog.portal.book.controller;
 import cn.prosayj.blog.core.common.Result;
 import cn.prosayj.blog.core.common.constants.constant.RedisCacheNames;
 import cn.prosayj.blog.core.dao.PageUtils;
-import cn.prosayj.blog.core.dao.entity.book.BookNote;
+import cn.prosayj.blog.core.dao.domain.book.BookNote;
 import cn.prosayj.blog.portal.common.annotation.LogLike;
 import cn.prosayj.blog.portal.common.annotation.LogView;
 import cn.prosayj.blog.portal.book.service.BookNoteService;

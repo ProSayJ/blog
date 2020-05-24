@@ -1,7 +1,7 @@
 package cn.prosayj.blog.manage.sys.service.impl;
 
 
-import cn.prosayj.blog.core.dao.entity.sys.SysRoleMenu;
+import cn.prosayj.blog.core.dao.domain.sys.SysRoleMenu;
 import cn.prosayj.blog.core.dao.mapper.sys.SysRoleMenuMapper;
 import cn.prosayj.blog.manage.sys.service.SysRoleMenuService;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;

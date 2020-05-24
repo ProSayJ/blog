@@ -1,8 +1,8 @@
 package cn.prosayj.blog.portal.book.service;
 
 import cn.prosayj.blog.core.dao.PageUtils;
-import cn.prosayj.blog.core.dao.entity.book.BookNote;
-import cn.prosayj.blog.core.dao.entity.book.vo.BookNoteVO;
+import cn.prosayj.blog.core.dao.domain.book.BookNote;
+import cn.prosayj.blog.core.dao.domain.book.vo.BookNoteVO;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;

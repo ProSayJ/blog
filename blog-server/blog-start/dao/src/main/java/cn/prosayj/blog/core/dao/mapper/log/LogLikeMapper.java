@@ -1,6 +1,6 @@
 package cn.prosayj.blog.core.dao.mapper.log;
 
-import cn.prosayj.blog.core.dao.entity.log.LogLike;
+import cn.prosayj.blog.core.dao.domain.log.LogLike;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 

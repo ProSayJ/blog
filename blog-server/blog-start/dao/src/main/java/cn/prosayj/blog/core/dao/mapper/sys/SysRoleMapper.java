@@ -1,6 +1,6 @@
 package cn.prosayj.blog.core.dao.mapper.sys;
 
-import cn.prosayj.blog.core.dao.entity.sys.SysRole;
+import cn.prosayj.blog.core.dao.domain.sys.SysRole;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 

@@ -4,7 +4,7 @@ import cn.prosayj.blog.core.common.Result;
 import cn.prosayj.blog.core.dao.PageUtils;
 import cn.prosayj.blog.core.dao.base.AbstractController;
 import cn.prosayj.blog.core.common.constants.constant.RedisCacheNames;
-import cn.prosayj.blog.core.dao.entity.operation.Link;
+import cn.prosayj.blog.core.dao.domain.operation.Link;
 import cn.prosayj.blog.manage.operation.service.LinkService;
 import cn.prosayj.blog.core.dao.validator.ValidatorUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;

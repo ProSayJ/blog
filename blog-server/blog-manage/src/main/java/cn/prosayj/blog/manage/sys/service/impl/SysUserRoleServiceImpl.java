@@ -1,7 +1,7 @@
 package cn.prosayj.blog.manage.sys.service.impl;
 
 
-import cn.prosayj.blog.core.dao.entity.sys.SysUserRole;
+import cn.prosayj.blog.core.dao.domain.sys.SysUserRole;
 import cn.prosayj.blog.core.dao.mapper.sys.SysUserRoleMapper;
 import cn.prosayj.blog.manage.sys.service.SysUserRoleService;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;

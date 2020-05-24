@@ -2,8 +2,8 @@ package cn.prosayj.blog.portal.book.service.impl;
 
 import cn.prosayj.blog.core.dao.PageUtils;
 import cn.prosayj.blog.core.dao.Query;
-import cn.prosayj.blog.core.dao.entity.book.BookNote;
-import cn.prosayj.blog.core.dao.entity.book.vo.BookNoteVO;
+import cn.prosayj.blog.core.dao.domain.book.BookNote;
+import cn.prosayj.blog.core.dao.domain.book.vo.BookNoteVO;
 import cn.prosayj.blog.core.dao.mapper.book.BookNoteMapper;
 import cn.prosayj.blog.portal.book.service.BookNoteService;
 import cn.prosayj.blog.portal.book.service.BookService;

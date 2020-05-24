@@ -1,6 +1,6 @@
 package cn.prosayj.blog.manage.book.service;
 
-import cn.prosayj.blog.core.dao.entity.book.BookSense;
+import cn.prosayj.blog.core.dao.domain.book.BookSense;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

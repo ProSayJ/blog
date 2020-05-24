@@ -2,8 +2,8 @@ package cn.prosayj.blog.manage.operation.service.impl;
 
 import cn.prosayj.blog.core.dao.PageUtils;
 import cn.prosayj.blog.core.dao.Query;
-import cn.prosayj.blog.core.dao.entity.operation.Tag;
-import cn.prosayj.blog.core.dao.entity.operation.TagLink;
+import cn.prosayj.blog.core.dao.domain.operation.Tag;
+import cn.prosayj.blog.core.dao.domain.operation.TagLink;
 import cn.prosayj.blog.core.dao.mapper.operation.TagLinkMapper;
 import cn.prosayj.blog.core.dao.mapper.operation.TagMapper;
 import cn.prosayj.blog.manage.operation.service.TagService;

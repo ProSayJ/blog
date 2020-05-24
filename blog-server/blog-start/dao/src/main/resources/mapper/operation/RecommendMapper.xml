@@ -7,7 +7,7 @@
         id, link_id, type, order_num, title, top
     </sql>
 
-    <select id="listSelect" resultType="cn.prosayj.blog.core.dao.entity.operation.vo.RecommendVO">
+    <select id="listSelect" resultType="cn.prosayj.blog.core.dao.domain.operation.vo.RecommendVO">
         select a.id as linkId, a.title, 0 as type
         from article a
         union all
@@ -15,11 +15,11 @@
         from book_note b
     </select>
 
-    <select id="listRecommendVo" resultType="cn.prosayj.blog.core.dao.entity.operation.vo.RecommendVO">
+    <select id="listRecommendVo" resultType="cn.prosayj.blog.core.dao.domain.operation.vo.RecommendVO">
         select <include refid="Base_Column_List"/> from recommend order by top desc,id desc  limit 5
     </select>
 
-    <select id="listHotRead" resultType="cn.prosayj.blog.core.dao.entity.operation.vo.RecommendVO">
+    <select id="listHotRead" resultType="cn.prosayj.blog.core.dao.domain.operation.vo.RecommendVO">
       select *  from (
                select a.id as linkId,a.title,0 as type,a.read_num from article a
                union all

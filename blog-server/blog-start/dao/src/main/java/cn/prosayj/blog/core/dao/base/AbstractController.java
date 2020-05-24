@@ -1,6 +1,6 @@
 package cn.prosayj.blog.core.dao.base;
 
-import cn.prosayj.blog.core.dao.entity.sys.SysUser;
+import cn.prosayj.blog.core.dao.domain.sys.SysUser;
 import org.apache.shiro.SecurityUtils;
 
 /**

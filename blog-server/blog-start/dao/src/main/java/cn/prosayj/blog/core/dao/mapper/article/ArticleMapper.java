@@ -1,11 +1,12 @@
 package cn.prosayj.blog.core.dao.mapper.article;
 
-import cn.prosayj.blog.core.dao.entity.article.Article;
-import cn.prosayj.blog.core.dao.entity.article.vo.ArticleVO;
+import cn.prosayj.blog.core.dao.domain.article.Article;
+import cn.prosayj.blog.core.dao.domain.article.vo.ArticleVO;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Map;
@@ -17,6 +18,7 @@ import java.util.Map;
  *
  */
 @Mapper
+@Repository
 public interface ArticleMapper extends BaseMapper<Article> {
 
 

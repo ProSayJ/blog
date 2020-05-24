@@ -5,7 +5,7 @@ import cn.prosayj.blog.core.common.Result;
 import cn.prosayj.blog.core.common.constants.constant.SysConstants;
 import cn.prosayj.blog.core.dao.PageUtils;
 import cn.prosayj.blog.core.dao.base.AbstractController;
-import cn.prosayj.blog.core.dao.entity.sys.SysRole;
+import cn.prosayj.blog.core.dao.domain.sys.SysRole;
 import cn.prosayj.blog.manage.sys.service.SysRoleMenuService;
 import cn.prosayj.blog.manage.sys.service.SysRoleService;
 import cn.prosayj.blog.core.dao.validator.ValidatorUtils;

@@ -3,7 +3,7 @@
 <mapper namespace="cn.prosayj.blog.core.dao.mapper.article.ArticleMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="cn.prosayj.blog.core.dao.entity.article.Article">
+    <resultMap id="BaseResultMap" type="cn.prosayj.blog.core.dao.domain.article.Article">
         <id column="id" property="id" />
         <result column="title" property="title" />
         <result column="description" property="description" />
@@ -22,7 +22,7 @@
         <result column="top" property="top" />
     </resultMap>
 
-    <resultMap id="WithTagList" type="cn.prosayj.blog.core.dao.entity.article.dto.ArticleDTO" extends="BaseResultMap">
+    <resultMap id="WithTagList" type="cn.prosayj.blog.core.dao.domain.article.dto.ArticleDTO" extends="BaseResultMap">
         <association property="tagList" column="{linkId=id, type=type}" select="cn.prosayj.blog.core.dao.mapper.operation.TagMapper.listByLinkId"/>
     </resultMap>
 
@@ -34,7 +34,7 @@
        id,title,description,author,read_num,like_num,cover,cover_type,create_time,top,publish,recommend,category_id
     </sql>
 
-    <select id="listArticleVo" resultType="cn.prosayj.blog.core.dao.entity.article.vo.ArticleVO">
+    <select id="listArticleVo" resultType="cn.prosayj.blog.core.dao.domain.article.vo.ArticleVO">
         select <include refid="manageArticleColumn"/> from article
         <where>
             <if test="params.title!=null and params.title !=''">
@@ -71,7 +71,7 @@
         update article set read_num = read_num + 1 where id = #{id}
     </update>
 
-    <select id="getSimpleArticleVo" resultType="cn.prosayj.blog.core.dao.entity.article.vo.ArticleVO">
+    <select id="getSimpleArticleVo" resultType="cn.prosayj.blog.core.dao.domain.article.vo.ArticleVO">
         select <include refid="homeArticleColumn"/> from article where id = #{id}
     </select>
 

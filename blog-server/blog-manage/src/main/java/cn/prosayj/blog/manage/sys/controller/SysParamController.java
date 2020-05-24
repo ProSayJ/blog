@@ -4,7 +4,7 @@ package cn.prosayj.blog.manage.sys.controller;
 import cn.prosayj.blog.core.common.Result;
 import cn.prosayj.blog.core.dao.PageUtils;
 import cn.prosayj.blog.core.dao.base.AbstractController;
-import cn.prosayj.blog.core.dao.entity.sys.SysParam;
+import cn.prosayj.blog.core.dao.domain.sys.SysParam;
 import cn.prosayj.blog.manage.sys.service.SysParamService;
 import cn.prosayj.blog.core.dao.validator.ValidatorUtils;
 import lombok.extern.slf4j.Slf4j;

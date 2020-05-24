@@ -1,6 +1,6 @@
 package cn.prosayj.blog.manage.sys.service;
 
-import cn.prosayj.blog.core.dao.entity.sys.SysUserRole;
+import cn.prosayj.blog.core.dao.domain.sys.SysUserRole;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;

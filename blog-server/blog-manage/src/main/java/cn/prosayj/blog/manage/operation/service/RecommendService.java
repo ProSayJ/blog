@@ -1,8 +1,8 @@
 package cn.prosayj.blog.manage.operation.service;
 
 import cn.prosayj.blog.core.dao.PageUtils;
-import cn.prosayj.blog.core.dao.entity.operation.Recommend;
-import cn.prosayj.blog.core.dao.entity.operation.vo.RecommendVO;
+import cn.prosayj.blog.core.dao.domain.operation.Recommend;
+import cn.prosayj.blog.core.dao.domain.operation.vo.RecommendVO;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;

@@ -1,7 +1,7 @@
 package cn.prosayj.blog.portal.timeline.service;
 
 
-import cn.prosayj.blog.core.dao.entity.timeline.Timeline;
+import cn.prosayj.blog.core.dao.domain.timeline.Timeline;
 
 import java.util.List;
 

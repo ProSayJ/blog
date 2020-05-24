@@ -3,7 +3,7 @@
 <mapper namespace="cn.prosayj.blog.core.dao.mapper.book.BookMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="cn.prosayj.blog.core.dao.entity.book.Book">
+    <resultMap id="BaseResultMap" type="cn.prosayj.blog.core.dao.domain.book.Book">
         <id column="id" property="id" />
         <result column="title" property="title" />
         <result column="cover" property="cover" />
@@ -25,12 +25,12 @@
         <result column="reading" property="reading" />
     </resultMap>
 
-    <resultMap id="WithSubList" extends="BaseResultMap" type="cn.prosayj.blog.core.dao.entity.book.vo.BookVO">
+    <resultMap id="WithSubList" extends="BaseResultMap" type="cn.prosayj.blog.core.dao.domain.book.vo.BookVO">
         <association property="tagList" column="{linkId=id,type=type}" select="cn.prosayj.blog.core.dao.mapper.operation.TagMapper.listByLinkId"/>
         <association property="bookNoteList" column="id" select="cn.prosayj.blog.core.dao.mapper.book.BookNoteMapper.listSimpleBookNote"/>
         <association property="bookSense" column="{bookId=id}" select="cn.prosayj.blog.core.dao.mapper.book.BookSenseMapper.selectOne"/>
     </resultMap>
-    <resultMap id="WithTagList" extends="BaseResultMap" type="cn.prosayj.blog.core.dao.entity.book.vo.BookVO">
+    <resultMap id="WithTagList" extends="BaseResultMap" type="cn.prosayj.blog.core.dao.domain.book.vo.BookVO">
         <association property="tagList" column="{linkId=id,type=type}" select="cn.prosayj.blog.core.dao.mapper.operation.TagMapper.listByLinkId"/>
     </resultMap>
 
@@ -43,7 +43,7 @@
         id,title,description,author,read_num,like_num,cover,create_time,reading,progress
     </sql>
 
-    <select id="listBookVo" resultType="cn.prosayj.blog.core.dao.entity.book.vo.BookVO">
+    <select id="listBookVo" resultType="cn.prosayj.blog.core.dao.domain.book.vo.BookVO">
         select <include refid="Base_Column_List"/> from book
         <where>
             <if test="params.title!=null and params.title!=''">

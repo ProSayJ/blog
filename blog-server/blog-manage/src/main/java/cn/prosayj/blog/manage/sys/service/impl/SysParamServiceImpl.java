@@ -3,7 +3,7 @@ package cn.prosayj.blog.manage.sys.service.impl;
 
 import cn.prosayj.blog.core.dao.PageUtils;
 import cn.prosayj.blog.core.dao.Query;
-import cn.prosayj.blog.core.dao.entity.sys.SysParam;
+import cn.prosayj.blog.core.dao.domain.sys.SysParam;
 import cn.prosayj.blog.core.dao.mapper.sys.SysParamMapper;
 import cn.prosayj.blog.manage.sys.service.SysParamService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;

@@ -2,7 +2,7 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.prosayj.blog.core.dao.mapper.operation.CategoryMapper">
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="cn.prosayj.blog.core.dao.entity.operation.Category">
+    <resultMap id="BaseResultMap" type="cn.prosayj.blog.core.dao.domain.operation.Category">
         <id column="id" property="id" />
         <result column="name" property="name" />
         <result column="type" property="type" />
@@ -15,7 +15,7 @@
         id, name, type, rank, parent_id
     </sql>
 
-    <select id="queryAll" parameterType="Map" resultType="cn.prosayj.blog.core.dao.entity.operation.Category">
+    <select id="queryAll" parameterType="Map" resultType="cn.prosayj.blog.core.dao.domain.operation.Category">
         select t.*,s.name as parentName from category t left join category s on t.parent_id = s.id
         <where>
             <if test="name != null and name != ''">

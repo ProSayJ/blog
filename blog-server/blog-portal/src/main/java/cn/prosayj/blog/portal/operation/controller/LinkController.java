@@ -2,7 +2,7 @@ package cn.prosayj.blog.portal.operation.controller;
 
 import cn.prosayj.blog.core.common.Result;
 import cn.prosayj.blog.core.common.constants.constant.RedisCacheNames;
-import cn.prosayj.blog.core.dao.entity.operation.Link;
+import cn.prosayj.blog.core.dao.domain.operation.Link;
 import cn.prosayj.blog.portal.operation.service.LinkService;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.Cacheable;

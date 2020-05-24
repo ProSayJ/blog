@@ -1,7 +1,7 @@
 package cn.prosayj.blog.manage.operation.mapper;
 
-import cn.prosayj.blog.core.dao.entity.operation.Recommend;
-import cn.prosayj.blog.core.dao.entity.operation.vo.RecommendVO;
+import cn.prosayj.blog.core.dao.domain.operation.Recommend;
+import cn.prosayj.blog.core.dao.domain.operation.vo.RecommendVO;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 

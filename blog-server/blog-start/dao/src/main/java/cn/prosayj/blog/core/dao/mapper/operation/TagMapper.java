@@ -1,7 +1,7 @@
 package cn.prosayj.blog.core.dao.mapper.operation;
 
-import cn.prosayj.blog.core.dao.entity.operation.Tag;
-import cn.prosayj.blog.core.dao.entity.operation.vo.TagVO;
+import cn.prosayj.blog.core.dao.domain.operation.Tag;
+import cn.prosayj.blog.core.dao.domain.operation.vo.TagVO;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;

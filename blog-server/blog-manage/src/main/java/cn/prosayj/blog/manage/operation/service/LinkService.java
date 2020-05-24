@@ -1,7 +1,7 @@
 package cn.prosayj.blog.manage.operation.service;
 
 import cn.prosayj.blog.core.dao.PageUtils;
-import cn.prosayj.blog.core.dao.entity.operation.Link;
+import cn.prosayj.blog.core.dao.domain.operation.Link;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.Map;

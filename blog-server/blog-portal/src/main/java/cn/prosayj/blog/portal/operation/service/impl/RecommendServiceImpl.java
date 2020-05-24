@@ -1,10 +1,10 @@
 package cn.prosayj.blog.portal.operation.service.impl;
 
 import cn.prosayj.blog.core.common.constants.enums.ModuleEnum;
-import cn.prosayj.blog.core.dao.entity.article.vo.ArticleVO;
-import cn.prosayj.blog.core.dao.entity.book.vo.BookNoteVO;
-import cn.prosayj.blog.core.dao.entity.operation.Recommend;
-import cn.prosayj.blog.core.dao.entity.operation.vo.RecommendVO;
+import cn.prosayj.blog.core.dao.domain.article.vo.ArticleVO;
+import cn.prosayj.blog.core.dao.domain.book.vo.BookNoteVO;
+import cn.prosayj.blog.core.dao.domain.operation.Recommend;
+import cn.prosayj.blog.core.dao.domain.operation.vo.RecommendVO;
 import cn.prosayj.blog.manage.operation.mapper.RecommendMapper;
 import cn.prosayj.blog.portal.article.service.ArticleService;
 import cn.prosayj.blog.portal.book.service.BookNoteService;

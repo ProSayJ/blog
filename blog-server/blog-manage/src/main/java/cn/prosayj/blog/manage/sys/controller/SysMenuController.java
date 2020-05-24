@@ -6,7 +6,7 @@ import cn.prosayj.blog.core.common.Result;
 import cn.prosayj.blog.core.dao.base.AbstractController;
 import cn.prosayj.blog.core.common.constants.enums.MenuTypeEnum;
 import cn.prosayj.blog.core.common.exception.BussinessException;
-import cn.prosayj.blog.core.dao.entity.sys.SysMenu;
+import cn.prosayj.blog.core.dao.domain.sys.SysMenu;
 import cn.prosayj.blog.manage.sys.service.SysMenuService;
 import org.apache.commons.lang.StringUtils;
 import org.apache.shiro.authz.annotation.RequiresPermissions;

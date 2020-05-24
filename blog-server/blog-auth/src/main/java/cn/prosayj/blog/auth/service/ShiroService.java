@@ -1,7 +1,7 @@
 package cn.prosayj.blog.auth.service;
 
 
-import cn.prosayj.blog.core.dao.entity.sys.SysUser;
+import cn.prosayj.blog.core.dao.domain.sys.SysUser;
 import cn.prosayj.blog.auth.oauth2.SysUserToken;
 
 import java.util.Set;

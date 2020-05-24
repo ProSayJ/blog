@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.prosayj.blog.core.dao.mapper.fileresource.FileResourceDomainMapper">
+  <resultMap id="BaseResultMap" type="cn.prosayj.blog.core.dao.domain.fileresource.FileResourceDomain">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="article_id" jdbcType="BIGINT" property="articleId" />
+    <result column="file_name" jdbcType="VARCHAR" property="fileName" />
+    <result column="file_suffix" jdbcType="VARCHAR" property="fileSuffix" />
+    <result column="file_db_url" jdbcType="VARCHAR" property="fileDbUrl" />
+    <result column="file_static_url" jdbcType="VARCHAR" property="fileStaticUrl" />
+    <result column="create_date" jdbcType="DATE" property="createDate" />
+    <result column="update_date" jdbcType="TIMESTAMP" property="updateDate" />
+    <result column="is_delete" jdbcType="TINYINT" property="isDelete" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="cn.prosayj.blog.core.dao.domain.fileresource.FileResourceDomain">
+    <result column="file_source" jdbcType="LONGVARBINARY" property="fileSource" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, user_id, article_id, file_name, file_suffix, file_db_url, file_static_url, create_date, 
+    update_date, is_delete
+  </sql>
+  <sql id="Blob_Column_List">
+    file_source
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from file_resource
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from file_resource
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="cn.prosayj.blog.core.dao.domain.fileresource.FileResourceDomain">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into file_resource (user_id, article_id, file_name, 
+      file_suffix, file_db_url, file_static_url, 
+      create_date, update_date, is_delete, 
+      file_source)
+    values (#{userId,jdbcType=BIGINT}, #{articleId,jdbcType=BIGINT}, #{fileName,jdbcType=VARCHAR}, 
+      #{fileSuffix,jdbcType=VARCHAR}, #{fileDbUrl,jdbcType=VARCHAR}, #{fileStaticUrl,jdbcType=VARCHAR}, 
+      #{createDate,jdbcType=DATE}, #{updateDate,jdbcType=TIMESTAMP}, #{isDelete,jdbcType=TINYINT}, 
+      #{fileSource,jdbcType=LONGVARBINARY})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.prosayj.blog.core.dao.domain.fileresource.FileResourceDomain">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Long">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into file_resource
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="articleId != null">
+        article_id,
+      </if>
+      <if test="fileName != null">
+        file_name,
+      </if>
+      <if test="fileSuffix != null">
+        file_suffix,
+      </if>
+      <if test="fileDbUrl != null">
+        file_db_url,
+      </if>
+      <if test="fileStaticUrl != null">
+        file_static_url,
+      </if>
+      <if test="createDate != null">
+        create_date,
+      </if>
+      <if test="updateDate != null">
+        update_date,
+      </if>
+      <if test="isDelete != null">
+        is_delete,
+      </if>
+      <if test="fileSource != null">
+        file_source,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="userId != null">
+        #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="articleId != null">
+        #{articleId,jdbcType=BIGINT},
+      </if>
+      <if test="fileName != null">
+        #{fileName,jdbcType=VARCHAR},
+      </if>
+      <if test="fileSuffix != null">
+        #{fileSuffix,jdbcType=VARCHAR},
+      </if>
+      <if test="fileDbUrl != null">
+        #{fileDbUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="fileStaticUrl != null">
+        #{fileStaticUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=DATE},
+      </if>
+      <if test="updateDate != null">
+        #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isDelete != null">
+        #{isDelete,jdbcType=TINYINT},
+      </if>
+      <if test="fileSource != null">
+        #{fileSource,jdbcType=LONGVARBINARY},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.prosayj.blog.core.dao.domain.fileresource.FileResourceDomain">
+    update file_resource
+    <set>
+      <if test="userId != null">
+        user_id = #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="articleId != null">
+        article_id = #{articleId,jdbcType=BIGINT},
+      </if>
+      <if test="fileName != null">
+        file_name = #{fileName,jdbcType=VARCHAR},
+      </if>
+      <if test="fileSuffix != null">
+        file_suffix = #{fileSuffix,jdbcType=VARCHAR},
+      </if>
+      <if test="fileDbUrl != null">
+        file_db_url = #{fileDbUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="fileStaticUrl != null">
+        file_static_url = #{fileStaticUrl,jdbcType=VARCHAR},
+      </if>
+      <if test="createDate != null">
+        create_date = #{createDate,jdbcType=DATE},
+      </if>
+      <if test="updateDate != null">
+        update_date = #{updateDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="isDelete != null">
+        is_delete = #{isDelete,jdbcType=TINYINT},
+      </if>
+      <if test="fileSource != null">
+        file_source = #{fileSource,jdbcType=LONGVARBINARY},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="cn.prosayj.blog.core.dao.domain.fileresource.FileResourceDomain">
+    update file_resource
+    set user_id = #{userId,jdbcType=BIGINT},
+      article_id = #{articleId,jdbcType=BIGINT},
+      file_name = #{fileName,jdbcType=VARCHAR},
+      file_suffix = #{fileSuffix,jdbcType=VARCHAR},
+      file_db_url = #{fileDbUrl,jdbcType=VARCHAR},
+      file_static_url = #{fileStaticUrl,jdbcType=VARCHAR},
+      create_date = #{createDate,jdbcType=DATE},
+      update_date = #{updateDate,jdbcType=TIMESTAMP},
+      is_delete = #{isDelete,jdbcType=TINYINT},
+      file_source = #{fileSource,jdbcType=LONGVARBINARY}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.prosayj.blog.core.dao.domain.fileresource.FileResourceDomain">
+    update file_resource
+    set user_id = #{userId,jdbcType=BIGINT},
+      article_id = #{articleId,jdbcType=BIGINT},
+      file_name = #{fileName,jdbcType=VARCHAR},
+      file_suffix = #{fileSuffix,jdbcType=VARCHAR},
+      file_db_url = #{fileDbUrl,jdbcType=VARCHAR},
+      file_static_url = #{fileStaticUrl,jdbcType=VARCHAR},
+      create_date = #{createDate,jdbcType=DATE},
+      update_date = #{updateDate,jdbcType=TIMESTAMP},
+      is_delete = #{isDelete,jdbcType=TINYINT}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

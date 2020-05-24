@@ -2,7 +2,7 @@ package cn.prosayj.blog.manage.sys.service.impl;
 
 import cn.prosayj.blog.core.common.constants.constant.SysConstants;
 import cn.prosayj.blog.core.common.constants.enums.MenuTypeEnum;
-import cn.prosayj.blog.core.dao.entity.sys.SysMenu;
+import cn.prosayj.blog.core.dao.domain.sys.SysMenu;
 import cn.prosayj.blog.core.dao.mapper.sys.SysMenuMapper;
 import cn.prosayj.blog.manage.sys.service.SysMenuService;
 import cn.prosayj.blog.manage.sys.service.SysRoleMenuService;

@@ -3,7 +3,7 @@
 <mapper namespace="cn.prosayj.blog.core.dao.mapper.operation.LinkMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="cn.prosayj.blog.core.dao.entity.operation.Link">
+    <resultMap id="BaseResultMap" type="cn.prosayj.blog.core.dao.domain.operation.Link">
         <id column="id" property="id" />
         <result column="title" property="title" />
         <result column="url" property="url" />

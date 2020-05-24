@@ -5,21 +5,17 @@ import cn.prosayj.blog.auth.service.SysUserTokenService;
 import cn.prosayj.blog.core.common.Result;
 import cn.prosayj.blog.core.common.constants.enums.ErrorEnum;
 import cn.prosayj.blog.core.dao.base.AbstractController;
-import cn.prosayj.blog.core.dao.entity.sys.SysUser;
-import cn.prosayj.blog.core.dao.entity.sys.form.SysLoginForm;
+import cn.prosayj.blog.core.dao.domain.sys.SysUser;
+import cn.prosayj.blog.core.dao.domain.sys.form.SysLoginForm;
 import cn.prosayj.blog.core.dao.mapper.sys.SysUserMapper;
 import cn.prosayj.blog.core.util.RedisUtils;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.toolkit.IOUtils;
 import org.apache.shiro.crypto.hash.Sha256Hash;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.imageio.ImageIO;
-import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.awt.image.BufferedImage;
 import java.io.IOException;
 
 

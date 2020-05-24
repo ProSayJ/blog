@@ -1,7 +1,7 @@
 package cn.prosayj.blog.portal.timeline.controller;
 
 import cn.prosayj.blog.core.common.Result;
-import cn.prosayj.blog.core.dao.entity.timeline.Timeline;
+import cn.prosayj.blog.core.dao.domain.timeline.Timeline;
 import cn.prosayj.blog.portal.timeline.service.TimelineService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

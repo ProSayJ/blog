@@ -1,6 +1,6 @@
 package cn.prosayj.blog.manage.operation.service.impl;
 
-import cn.prosayj.blog.core.dao.entity.operation.Category;
+import cn.prosayj.blog.core.dao.domain.operation.Category;
 import cn.prosayj.blog.core.dao.mapper.operation.CategoryMapper;
 import cn.prosayj.blog.manage.operation.service.CategoryService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;

@@ -5,7 +5,7 @@ import cn.prosayj.blog.core.dao.base.AbstractController;
 import cn.prosayj.blog.core.common.constants.constant.RedisCacheNames;
 import cn.prosayj.blog.core.common.constants.enums.CategoryRankEnum;
 import cn.prosayj.blog.core.common.exception.BussinessException;
-import cn.prosayj.blog.core.dao.entity.operation.Category;
+import cn.prosayj.blog.core.dao.domain.operation.Category;
 import cn.prosayj.blog.manage.article.service.ArticleService;
 import cn.prosayj.blog.manage.book.service.BookNoteService;
 import cn.prosayj.blog.manage.book.service.BookService;

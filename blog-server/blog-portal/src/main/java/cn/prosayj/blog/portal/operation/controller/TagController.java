@@ -2,7 +2,7 @@ package cn.prosayj.blog.portal.operation.controller;
 
 import cn.prosayj.blog.core.common.Result;
 import cn.prosayj.blog.core.common.constants.constant.RedisCacheNames;
-import cn.prosayj.blog.core.dao.entity.operation.vo.TagVO;
+import cn.prosayj.blog.core.dao.domain.operation.vo.TagVO;
 import cn.prosayj.blog.portal.operation.service.TagService;
 import org.springframework.cache.annotation.CacheConfig;
 import org.springframework.cache.annotation.Cacheable;

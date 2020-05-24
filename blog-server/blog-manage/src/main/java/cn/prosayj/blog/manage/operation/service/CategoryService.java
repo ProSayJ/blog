@@ -1,7 +1,7 @@
 package cn.prosayj.blog.manage.operation.service;
 
 
-import cn.prosayj.blog.core.dao.entity.operation.Category;
+import cn.prosayj.blog.core.dao.domain.operation.Category;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;

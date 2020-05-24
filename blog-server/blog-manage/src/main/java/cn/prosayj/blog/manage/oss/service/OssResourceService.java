@@ -1,7 +1,7 @@
 package cn.prosayj.blog.manage.oss.service;
 
 
-import cn.prosayj.blog.core.dao.entity.oss.OssResource;
+import cn.prosayj.blog.core.dao.domain.oss.OssResource;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**

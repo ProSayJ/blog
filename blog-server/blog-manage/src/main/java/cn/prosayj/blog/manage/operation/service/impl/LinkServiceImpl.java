@@ -2,7 +2,7 @@ package cn.prosayj.blog.manage.operation.service.impl;
 
 import cn.prosayj.blog.core.dao.PageUtils;
 import cn.prosayj.blog.core.dao.Query;
-import cn.prosayj.blog.core.dao.entity.operation.Link;
+import cn.prosayj.blog.core.dao.domain.operation.Link;
 import cn.prosayj.blog.core.dao.mapper.operation.LinkMapper;
 import cn.prosayj.blog.manage.operation.service.LinkService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;

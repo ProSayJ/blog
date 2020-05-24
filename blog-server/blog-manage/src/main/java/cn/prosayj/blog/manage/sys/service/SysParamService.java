@@ -1,7 +1,7 @@
 package cn.prosayj.blog.manage.sys.service;
 
 import cn.prosayj.blog.core.dao.PageUtils;
-import cn.prosayj.blog.core.dao.entity.sys.SysParam;
+import cn.prosayj.blog.core.dao.domain.sys.SysParam;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.Map;

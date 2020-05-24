@@ -2,7 +2,7 @@ package cn.prosayj.blog.manage.sys.service;
 
 
 import cn.prosayj.blog.core.dao.PageUtils;
-import cn.prosayj.blog.core.dao.entity.sys.SysRole;
+import cn.prosayj.blog.core.dao.domain.sys.SysRole;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;

@@ -1,13 +1,13 @@
 package cn.prosayj.blog.auth.service.impl;
 
 
-import cn.prosayj.blog.core.dao.entity.sys.SysUser;
+import cn.prosayj.blog.core.dao.domain.sys.SysUser;
 import cn.prosayj.blog.auth.oauth2.SysUserToken;
 import cn.prosayj.blog.auth.service.ShiroService;
 import cn.prosayj.blog.auth.service.SysUserTokenService;
 import cn.prosayj.blog.core.common.constants.constant.RedisKeyConstants;
 import cn.prosayj.blog.core.common.constants.constant.SysConstants;
-import cn.prosayj.blog.core.dao.entity.sys.SysMenu;
+import cn.prosayj.blog.core.dao.domain.sys.SysMenu;
 import cn.prosayj.blog.core.dao.mapper.sys.SysMenuMapper;
 import cn.prosayj.blog.core.dao.mapper.sys.SysUserMapper;
 import org.apache.commons.lang.StringUtils;

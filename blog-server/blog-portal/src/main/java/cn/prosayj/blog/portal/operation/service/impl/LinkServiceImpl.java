@@ -1,6 +1,6 @@
 package cn.prosayj.blog.portal.operation.service.impl;
 
-import cn.prosayj.blog.core.dao.entity.operation.Link;
+import cn.prosayj.blog.core.dao.domain.operation.Link;
 import cn.prosayj.blog.core.dao.mapper.operation.LinkMapper;
 import cn.prosayj.blog.portal.operation.service.LinkService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;

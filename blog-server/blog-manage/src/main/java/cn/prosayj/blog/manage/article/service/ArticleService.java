@@ -2,8 +2,8 @@ package cn.prosayj.blog.manage.article.service;
 
 
 import cn.prosayj.blog.core.dao.PageUtils;
-import cn.prosayj.blog.core.dao.entity.article.Article;
-import cn.prosayj.blog.core.dao.entity.article.dto.ArticleDTO;
+import cn.prosayj.blog.core.dao.domain.article.Article;
+import cn.prosayj.blog.core.dao.domain.article.dto.ArticleDTO;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.Map;

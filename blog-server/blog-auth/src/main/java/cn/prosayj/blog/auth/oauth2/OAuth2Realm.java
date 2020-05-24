@@ -1,7 +1,7 @@
 package cn.prosayj.blog.auth.oauth2;
 
 import cn.prosayj.blog.auth.service.ShiroService;
-import cn.prosayj.blog.core.dao.entity.sys.SysUser;
+import cn.prosayj.blog.core.dao.domain.sys.SysUser;
 import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;

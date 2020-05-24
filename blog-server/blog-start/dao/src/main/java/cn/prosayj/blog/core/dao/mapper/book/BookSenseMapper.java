@@ -1,6 +1,6 @@
 package cn.prosayj.blog.core.dao.mapper.book;
 
-import cn.prosayj.blog.core.dao.entity.book.BookSense;
+import cn.prosayj.blog.core.dao.domain.book.BookSense;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
 

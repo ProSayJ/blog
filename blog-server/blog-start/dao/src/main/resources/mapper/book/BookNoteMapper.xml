@@ -3,7 +3,7 @@
 <mapper namespace="cn.prosayj.blog.core.dao.mapper.book.BookNoteMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="cn.prosayj.blog.core.dao.entity.book.BookNote">
+    <resultMap id="BaseResultMap" type="cn.prosayj.blog.core.dao.domain.book.BookNote">
         <id column="id" property="id" />
         <result column="title" property="title" />
         <result column="description" property="description" />
@@ -24,7 +24,7 @@
         <result column="top" property="top" />
     </resultMap>
 
-    <resultMap id="WithSubList" type="cn.prosayj.blog.core.dao.entity.book.vo.BookNoteVO" extends="BaseResultMap">
+    <resultMap id="WithSubList" type="cn.prosayj.blog.core.dao.domain.book.vo.BookNoteVO" extends="BaseResultMap">
         <association property="tagList" column="{linkId=id,type=type}" select="cn.prosayj.blog.core.dao.mapper.operation.TagMapper.listByLinkId"/>
         <association property="book" column="{id=book_id}" select="cn.prosayj.blog.core.dao.mapper.book.BookMapper.selectById"/>
     </resultMap>
@@ -42,7 +42,7 @@
        id,title,description,author,read_num,like_num,cover,create_time,top,publish,recommend,category_id
     </sql>
 
-    <select id="listBookNoteVo" resultType="cn.prosayj.blog.core.dao.entity.book.vo.BookNoteVO">
+    <select id="listBookNoteVo" resultType="cn.prosayj.blog.core.dao.domain.book.vo.BookNoteVO">
         select <include refid="manageBookNoteColumn"/> from book_note
         <where>
             <if test="params.title!=null and params.title !=''">
@@ -78,11 +78,11 @@
         update book_note set read_num = read_num + 1 where id = #{id}
     </update>
 
-    <select id="getSimpleBookNoteVo" resultType="cn.prosayj.blog.core.dao.entity.book.vo.BookNoteVO">
+    <select id="getSimpleBookNoteVo" resultType="cn.prosayj.blog.core.dao.domain.book.vo.BookNoteVO">
         select <include refid="homeBookNoteColumn"/> from book_note where id = #{id}
     </select>
 
-    <select id="listSimpleBookNote" resultType="cn.prosayj.blog.core.dao.entity.book.BookNote">
+    <select id="listSimpleBookNote" resultType="cn.prosayj.blog.core.dao.domain.book.BookNote">
         select <include refid="homeBookNoteColumn"/> from book_note where book_id = #{bookId}
     </select>
 

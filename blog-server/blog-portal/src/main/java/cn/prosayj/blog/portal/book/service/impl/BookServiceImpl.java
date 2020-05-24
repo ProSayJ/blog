@@ -2,8 +2,8 @@ package cn.prosayj.blog.portal.book.service.impl;
 
 import cn.prosayj.blog.core.dao.PageUtils;
 import cn.prosayj.blog.core.dao.Query;
-import cn.prosayj.blog.core.dao.entity.book.Book;
-import cn.prosayj.blog.core.dao.entity.book.vo.BookVO;
+import cn.prosayj.blog.core.dao.domain.book.Book;
+import cn.prosayj.blog.core.dao.domain.book.vo.BookVO;
 import cn.prosayj.blog.core.dao.mapper.book.BookMapper;
 import cn.prosayj.blog.portal.book.service.BookService;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;

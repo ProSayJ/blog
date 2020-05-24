@@ -5,7 +5,7 @@ import cn.prosayj.blog.core.common.constants.constant.SysConstants;
 import cn.prosayj.blog.core.common.exception.BussinessException;
 import cn.prosayj.blog.core.dao.PageUtils;
 import cn.prosayj.blog.core.dao.Query;
-import cn.prosayj.blog.core.dao.entity.sys.SysUser;
+import cn.prosayj.blog.core.dao.domain.sys.SysUser;
 import cn.prosayj.blog.core.dao.mapper.sys.SysUserMapper;
 import cn.prosayj.blog.manage.sys.service.SysRoleService;
 import cn.prosayj.blog.manage.sys.service.SysUserRoleService;

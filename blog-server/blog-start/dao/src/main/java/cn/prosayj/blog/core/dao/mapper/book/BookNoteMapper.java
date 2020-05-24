@@ -1,7 +1,7 @@
 package cn.prosayj.blog.core.dao.mapper.book;
 
-import cn.prosayj.blog.core.dao.entity.book.BookNote;
-import cn.prosayj.blog.core.dao.entity.book.vo.BookNoteVO;
+import cn.prosayj.blog.core.dao.domain.book.BookNote;
+import cn.prosayj.blog.core.dao.domain.book.vo.BookNoteVO;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.apache.ibatis.annotations.Mapper;

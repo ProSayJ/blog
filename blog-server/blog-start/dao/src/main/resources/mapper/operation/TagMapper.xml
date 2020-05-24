@@ -7,7 +7,7 @@
         where atl.link_id = #{linkId} and atl.type = #{type}
     </delete>
 
-    <select id="listByLinkId" resultType="cn.prosayj.blog.core.dao.entity.operation.Tag">
+    <select id="listByLinkId" resultType="cn.prosayj.blog.core.dao.domain.operation.Tag">
         select bt.* from tag bt left join tag_link bat on bt.id=bat.tag_id
         <where>
             <if test="linkId!=null">
@@ -19,7 +19,7 @@
         </where>
     </select>
 
-    <select id="listTagVo" resultType="cn.prosayj.blog.core.dao.entity.operation.vo.TagVO">
+    <select id="listTagVo" resultType="cn.prosayj.blog.core.dao.domain.operation.vo.TagVO">
         select t.name ,sum(t.num) as linkNum from (
           select distinct t.type, t.name, (select count(*) from tag_link tl2 where tl2.tag_id = t.id) as num
           from tag t

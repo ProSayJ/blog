@@ -56,22 +56,21 @@ public class CodeGeneratorUtils {
         }
 
         // 全局配置
-        GlobalConfig gc = new GlobalConfig();
+        GlobalConfig globalConfig = new GlobalConfig();
         String projectPath = System.getProperty("user.dir");
-        gc.setOutputDir(projectPath + "/src/main/java");
-        gc.setAuthor("bobbi");
-        ;
-        gc.setBaseResultMap(true);
-        gc.setBaseColumnList(true);
-        gc.setOpen(false);
-        gc.setSwagger2(true);
-        gc.setServiceName("%sService");
-        gc.setIdType(IdType.ID_WORKER_STR);
-        mpg.setGlobalConfig(gc);
+        globalConfig.setOutputDir(projectPath + "/src/main/java");
+        globalConfig.setAuthor("ProSayJ");
+        globalConfig.setBaseResultMap(true);
+        globalConfig.setBaseColumnList(true);
+        globalConfig.setOpen(false);
+        globalConfig.setSwagger2(true);
+        globalConfig.setServiceName("%sService");
+        globalConfig.setIdType(IdType.ID_WORKER_STR);
+        mpg.setGlobalConfig(globalConfig);
 
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://localhost:3306/blog?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false");
+        dsc.setUrl("jdbc:mysql://localhost:3306/blog?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT");
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
         dsc.setPassword("root");
@@ -79,7 +78,7 @@ public class CodeGeneratorUtils {
 
         // 包配置
         PackageConfig pc = new PackageConfig();
-        pc.setParent("cn.prosayj.blog.manage");
+        pc.setParent("cn.prosayj.blog.core.dao");
         pc.setModuleName(moduleName);
         mpg.setPackageInfo(pc);
 
@@ -91,7 +90,7 @@ public class CodeGeneratorUtils {
                 Map<String, Object> map = new HashMap<String, Object>();
                 map.put("entityName", finalEntityName);
                 map.put("urlPrefix", "/admin");
-                map.put("basePath", "cn.dblearn.blog");
+                map.put("basePath", "cn.prosayj.blog.core.dao");
                 this.setMap(map);
             }
         };
@@ -106,56 +105,55 @@ public class CodeGeneratorUtils {
                         + "/" + tableInfo.getEntityName() + "Mapper" + StringPool.DOT_XML;
             }
         });
-        //配置前端addOrUpdate页面
-        focList.add(new FileOutConfig("/templates/add-or-update.vue.ftl") {
-            @Override
-            public String outputFile(TableInfo tableInfo) {
-                // 自定义输入文件名称
-                return projectPath + "/src/main/resources/views/" + pc.getModuleName()
-                        + "/" + finalEntityName + "-add-or-update.vue";
-            }
-        });
-        //配置前端list页面
-        focList.add(new FileOutConfig("/templates/index.vue.ftl") {
-            @Override
-            public String outputFile(TableInfo tableInfo) {
-                // 自定义输入文件名称
-                return projectPath + "/src/main/resources/views/" + pc.getModuleName()
-                        + "/" + finalEntityName + ".vue";
-            }
-        });
-        //配置菜单SQL
-        focList.add(new FileOutConfig("/templates/menu.sql.ftl") {
-            @Override
-            public String outputFile(TableInfo tableInfo) {
-                // 自定义输入文件名称
-                return projectPath + "/src/main/resources/sql/" + pc.getModuleName()
-                        + "/" + finalEntityName + ".sql";
-            }
-        });
-
-        TemplateConfig tc = new TemplateConfig();
-        tc.setEntity("/templates/entity.java");
-        tc.setXml(null);
-        tc.setMapper("/templates/mapper.java");
-        tc.setService("/templates/service.java");
-        tc.setServiceImpl("/templates/serviceImpl.java");
-        tc.setController("/templates/controller.java");
-
-        cfg.setFileOutConfigList(focList);
-        mpg.setCfg(cfg);
-        mpg.setTemplate(tc);
+//        //配置前端addOrUpdate页面
+//        focList.add(new FileOutConfig("/templates/add-or-update.vue.ftl") {
+//            @Override
+//            public String outputFile(TableInfo tableInfo) {
+//                // 自定义输入文件名称
+//                return projectPath + "/src/main/resources/views/" + pc.getModuleName()
+//                        + "/" + finalEntityName + "-add-or-update.vue";
+//            }
+//        });
+//        //配置前端list页面
+//        focList.add(new FileOutConfig("/templates/index.vue.ftl") {
+//            @Override
+//            public String outputFile(TableInfo tableInfo) {
+//                // 自定义输入文件名称
+//                return projectPath + "/src/main/resources/views/" + pc.getModuleName()
+//                        + "/" + finalEntityName + ".vue";
+//            }
+//        });
+//        //配置菜单SQL
+//        focList.add(new FileOutConfig("/templates/menu.sql.ftl") {
+//            @Override
+//            public String outputFile(TableInfo tableInfo) {
+//                // 自定义输入文件名称
+//                return projectPath + "/src/main/resources/sql/" + pc.getModuleName()
+//                        + "/" + finalEntityName + ".sql";
+//            }
+//        });
+//        TemplateConfig tc = new TemplateConfig();
+//        tc.setEntity("/templates/entity.java");
+//        tc.setXml(null);
+//        tc.setMapper("/templates/mapper.java");
+//        tc.setService("/templates/service.java");
+//        tc.setServiceImpl("/templates/serviceImpl.java");
+//        tc.setController("/templates/controller.java");
+//        cfg.setFileOutConfigList(focList);
+//        mpg.setCfg(cfg);
+//        mpg.setTemplate(tc);
 
         // 策略配置
-        StrategyConfig strategy = new StrategyConfig();
-        strategy.setNaming(NamingStrategy.underline_to_camel);
-        strategy.setColumnNaming(NamingStrategy.underline_to_camel);
-        strategy.setEntityLombokModel(true);
-        strategy.setRestControllerStyle(true);
-        strategy.setInclude(tableName);
-        strategy.setSuperControllerClass("cn.dblearn.blog.manage.sys.controller.AbstractController");
+//        StrategyConfig strategy = new StrategyConfig();
+//        strategy.setNaming(NamingStrategy.underline_to_camel);
+//        strategy.setColumnNaming(NamingStrategy.underline_to_camel);
+//        strategy.setEntityLombokModel(true);
+//        strategy.setRestControllerStyle(true);
+//        strategy.setInclude(tableName);
+//        strategy.setSuperControllerClass("cn.prosayj.blog.core.dao.base.AbstractController");
+//        mpg.setStrategy(strategy);
 
-        mpg.setStrategy(strategy);
+
         mpg.setTemplateEngine(new FreemarkerTemplateEngine());
         mpg.execute();
     }

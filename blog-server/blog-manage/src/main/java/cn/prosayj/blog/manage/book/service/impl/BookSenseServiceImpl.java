@@ -1,6 +1,6 @@
 package cn.prosayj.blog.manage.book.service.impl;
 
-import cn.prosayj.blog.core.dao.entity.book.BookSense;
+import cn.prosayj.blog.core.dao.domain.book.BookSense;
 import cn.prosayj.blog.core.dao.mapper.book.BookSenseMapper;
 import cn.prosayj.blog.manage.book.service.BookSenseService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;

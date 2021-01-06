@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "ajv": "^6.9.1",
-    "axios": "0.18.1",
+    "axios": "0.21.1",
     "echarts": "4.1.0",
     "element-ui": "2.3.2",
     "lodash": "4.17.13",

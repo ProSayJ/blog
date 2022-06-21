@@ -40,7 +40,7 @@
         <qiniu.version>[7.2.0, 7.2.99]</qiniu.version>
         <springboot.version>2.1.2.RELEASE</springboot.version>
         <lombok.version>1.18.4</lombok.version>
-        <mysql.version>8.0.11</mysql.version>
+        <mysql.version>8.0.28</mysql.version>
         <google.zxing.version>3.4.0</google.zxing.version>
         <google.javase.version>3.4.0</google.javase.version>
         <mybatis.generator.version>1.3.5</mybatis.generator.version>
